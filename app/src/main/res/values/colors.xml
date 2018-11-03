@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#C0C0C0</color>
+    <color name="colorAccent">#03a9f4</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="darkGrayColor">#757575</color>
+
+    <!-- TABS -->
+    <color name="window_background">#EEEEEE</color>
+
+    <!-- CHECK/ERROR -->
+    <color name="hojaRuta_confirm">#008000</color>
+    <color name="hojaRuta_warning">#FF0000</color>
+
+</resources>

@@ -1,0 +1,4 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('droidText.0.4.jar'))
+dependencies {
+}

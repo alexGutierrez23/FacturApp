@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.testingbd.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.1"
+            android:minHeight="250dp"
+            android:scaleType="center"
+            app:srcCompat="@drawable/mercedestaxi" />
+
+        <EditText
+            android:id="@+id/codeLogin"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_fields"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:hint="@string/hint_codeLogin"
+            android:inputType="textCapSentences"
+            android:singleLine="true"
+            android:textColor="#080808"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/codeLogin"
+            android:layout_alignRight="@+id/codeLogin"
+            android:layout_below="@+id/codeLogin"
+            android:layout_marginTop="40dp"
+            android:onClick="login"
+            android:text="@string/login"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/login"
+            android:layout_marginTop="42dp"
+            android:text="@string/logUpMessage"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/logupButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView12"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:onClick="logup"
+            android:text="@string/logup" />
+
+        <Button
+            android:id="@+id/reenviarCodigo"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/codeLogin"
+            android:layout_alignStart="@+id/codeLogin"
+            android:layout_alignTop="@+id/login"
+            android:onClick="reenviarCodigo"
+            android:text="@string/resendCode" />
+    </RelativeLayout>
+
+</RelativeLayout>

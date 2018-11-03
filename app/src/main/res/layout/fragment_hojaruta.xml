@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/hojaRutaFragmentLayout"
+    tools:context="fragment.HojaRutaFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFragmentHojaRuta"
+        android:text="No hay hojas de ruta creadas"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerHojaRuta"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvFragmentHojaRuta"
+        android:visibility="gone"
+    />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_recyclerViewHojaRuta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/spinnerHojaRuta"
+        android:scrollbars="vertical" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAnyadirHojaRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_gravity="bottom|right"
+        android:scaleType="center"
+        android:src="@android:drawable/ic_menu_add"
+        android:theme="@style/Widget.Design.FloatingActionButton"
+        app:fabSize="auto" />
+
+</RelativeLayout>

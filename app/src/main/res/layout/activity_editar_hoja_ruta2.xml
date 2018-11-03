@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.usuario.testingbd.EditarHojaRuta2">
+
+    <ImageView
+        android:id="@+id/imageViewCrearHojaRuta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.1"
+        android:minHeight="250dp"
+        android:scaleType="center"
+        app:srcCompat="@drawable/mercedestaxi" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollViewCrearHojaRuta"
+        android:fillViewport="true"
+        android:isScrollContainer="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewEditarNumHR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/hint_numHojaRuta" />
+
+            <EditText
+                android:id="@+id/numberHojaRutaEditarHR"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_fields"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#080808"
+                android:layout_below="@+id/textViewEditarNumHR"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="23dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:enabled="false"
+                />
+
+            <TextView
+                android:id="@+id/textViewMostrarFechaIni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/numberHojaRutaEditarHR"
+                android:layout_alignStart="@+id/textViewEditarNumHR"
+                android:layout_alignLeft="@+id/textViewEditarNumHR"
+                android:layout_marginTop="5dp"
+                android:text="@string/hint_fechaInicio" />
+            <TextView
+                android:id="@+id/mostrarFechaInicioHojaRutaEditarHR"
+                android:layout_width="170dip"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/rounded_fields"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/hint_fechaInicio"
+                android:singleLine="true"
+                android:textColor="#080808"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="20dp"
+                android:layout_below="@+id/textViewMostrarFechaIni"
+                />
+
+            <Button
+                android:id="@+id/selecFechaInicioHojaRutaEditarHR"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Seleccionar fecha"
+                android:textColor="#090909"
+                android:textSize="10dp"
+                android:layout_alignTop="@+id/mostrarFechaInicioHojaRutaEditarHR"
+                android:layout_marginLeft="200sp"
+                android:layout_below="@+id/textViewMostrarFechaIni"
+                />
+
+            <TextView
+                android:id="@+id/textViewMostrarFechaFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mostrarFechaInicioHojaRutaEditarHR"
+                android:layout_alignStart="@+id/textViewEditarNumHR"
+                android:layout_alignLeft="@+id/textViewEditarNumHR"
+                android:layout_marginTop="5dp"
+                android:text="@string/hint_fechaFin" />
+
+            <TextView
+                android:id="@+id/mostrarFechaFinHojaRutaEditarHR"
+                android:layout_width="170dip"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/rounded_fields"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/hint_fechaFin"
+                android:singleLine="true"
+                android:textColor="#080808"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="20dp"
+                android:layout_below="@+id/textViewMostrarFechaFin"
+                />
+
+            <Button
+                android:id="@+id/selecFechaFinHojaRutaEditarHR"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Seleccionar fecha"
+                android:textColor="#090909"
+                android:textSize="10dp"
+                android:layout_alignTop="@+id/mostrarFechaFinHojaRutaEditarHR"
+                android:layout_alignRight="@+id/selecFechaInicioHojaRutaEditarHR"
+                />
+
+            <TextView
+                android:id="@+id/textViewMostrarHoraIni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mostrarFechaFinHojaRutaEditarHR"
+                android:layout_alignStart="@+id/textViewEditarNumHR"
+                android:layout_alignLeft="@+id/textViewEditarNumHR"
+                android:layout_marginTop="5dp"
+                android:text="@string/hint_horaInicio" />
+            <TextView
+                android:id="@+id/mostrarHoraInicioHojaRutaEditarHR"
+                android:layout_width="170dip"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/rounded_fields"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/hint_horaInicio"
+                android:singleLine="true"
+                android:textColor="#080808"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="20dp"
+                android:layout_below="@+id/textViewMostrarHoraIni"
+                />
+
+            <Button
+                android:id="@+id/selecHoraInicioHojaRutaEditarHR"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Seleccionar hora"
+                android:textColor="#090909"
+                android:textSize="10dp"
+                android:layout_alignTop="@+id/mostrarHoraInicioHojaRutaEditarHR"
+                android:layout_alignRight="@+id/selecFechaFinHojaRutaEditarHR"
+                />
+
+            <TextView
+                android:id="@+id/textViewMostrarHoraFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mostrarHoraInicioHojaRutaEditarHR"
+                android:layout_alignStart="@+id/textViewEditarNumHR"
+                android:layout_alignLeft="@+id/textViewEditarNumHR"
+                android:layout_marginTop="5dp"
+                android:text="@string/hint_horaFin" />
+            <TextView
+                android:id="@+id/mostrarHoraFinHojaRutaEditarHR"
+                android:layout_width="170dip"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/rounded_fields"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/hint_horaFin"
+                android:singleLine="true"
+                android:textColor="#080808"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="20dp"
+                android:layout_below="@+id/textViewMostrarHoraFin"
+                />
+
+            <Button
+                android:id="@+id/selecHoraFinHojaRutaEditarHR"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Seleccionar hora"
+                android:textColor="#090909"
+                android:textSize="10dp"
+                android:layout_alignTop="@+id/mostrarHoraFinHojaRutaEditarHR"
+                android:layout_alignRight="@+id/selecHoraInicioHojaRutaEditarHR"
+                />
+
+            <Button
+                android:id="@+id/button_goToEditHojaRuta3"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/mostrarHoraFinHojaRutaEditarHR"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:onClick="goToEditarHojaRuta3"
+                android:text="@string/hint_actualizarHojaRuta" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

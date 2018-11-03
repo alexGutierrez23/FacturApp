@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/invoiceFragmentLayout"
+    tools:context="fragment.InvoiceFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tvFragmentInvoice"
+        android:textSize="20sp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_recyclerViewInvoice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAnyadirInvoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30sp"
+        android:layout_marginRight="30sp"
+        android:scaleType="center"
+        android:src="@android:drawable/ic_menu_add"
+        android:theme="@style/Widget.Design.FloatingActionButton"
+        app:fabSize="auto" />
+
+</RelativeLayout>

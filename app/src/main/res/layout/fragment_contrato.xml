@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/contratoFragmentLayout"
+    tools:context="fragment.ContratoFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFragmentContrato"
+        android:text="@string/tv_noContratos_creados"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/darkGrayColor"
+        android:layout_below="@+id/tvFragmentContrato"
+        android:id="@+id/spinnerLayout">
+        <Spinner
+            android:id="@+id/spinnerContrato"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:spinnerMode="dialog"
+        />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_recyclerViewContrato"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/spinnerLayout"
+        android:scrollbars="vertical" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAnyadirContrato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_gravity="bottom|right"
+        android:scaleType="center"
+        android:src="@android:drawable/ic_menu_add"
+        android:theme="@style/Widget.Design.FloatingActionButton"
+        app:fabSize="auto" />
+
+</RelativeLayout>

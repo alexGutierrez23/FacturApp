@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/navigation_drawer_inicio"
+            android:tint="@color/colorAccent"/>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="@string/navigation_drawer_editarPerfil"
+            android:tint="@color/colorAccent"
+            />
+        <item
+            android:id="@+id/nav_logo"
+            android:icon="@drawable/ic_file_upload_black_24dp"
+            android:title="@string/navigation_drawer_subirLogo"
+            android:tint="@color/colorAccent"
+            />
+        <item
+            android:id="@+id/nav_rendimientos"
+            android:icon="@drawable/ic_euro_symbol_black_24dp"
+            android:title="@string/navigation_drawer_rendimientoMes"
+            android:tint="@color/colorAccent"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Hoja de Ruta">
+            <menu>
+                <item
+                    android:id="@+id/nav_hojaRuta"
+                    android:icon="@drawable/ic_description_black_24dp"
+                    android:title="@string/navigation_drawer_verContratos"
+                    android:tint="@color/colorAccent"
+                    />
+            </menu>
+        </item>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Ayuda">
+            <menu>
+                <item
+                    android:id="@+id/nav_ayudaGeneral"
+                    android:icon="@drawable/ic_info_outline_black_24dp"
+                    android:title="@string/navigation_drawer_ayudaGeneral"
+                    android:tint="@color/colorAccent"/>
+                <item
+                    android:id="@+id/nav_ayudaBluetooth"
+                    android:icon="@drawable/ic_print_black_24dp"
+                    android:title="@string/navigation_drawer_ayudaBluetooth"
+                    android:tint="@color/colorAccent"/>
+            </menu>
+        </item>
+
+    </group>
+
+</menu>

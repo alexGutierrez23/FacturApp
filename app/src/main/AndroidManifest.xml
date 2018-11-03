@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.usuario.testingbd">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="stateVisible|adjustResize">
+        <activity android:name=".ImagenInicio">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Logup"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Logup2"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MenuPrincipal"
+            android:parentActivityName=".MenuPrincipal"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+        <activity
+            android:name=".DisplayPdf"
+            android:parentActivityName=".MenuPrincipal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+        <activity
+            android:name=".UploadLogo"
+            android:parentActivityName=".MenuPrincipal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+
+        <!-- TICKET SECTION -->
+        <activity
+            android:name=".Ticket1"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Ticket2"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Imprimir"></activity>
+
+        <!-- INVOICE SECTION -->
+        <activity
+            android:name=".Factura"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Factura1"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Factura2"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Factura3"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- PRESUPUESTO SECTION -->
+        <activity
+            android:name=".Presupuesto"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Presupuesto1"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Presupuesto2"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".Presupuesto3"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- EDIT PROFILE SECTION -->
+        <activity
+            android:name=".EditProfile"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".EditProfile2"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- CONTRATO SECTION -->
+        <activity
+            android:name=".VistaContratos"
+            android:parentActivityName=".MenuPrincipal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+        <activity android:name=".Contrato1" />
+        <activity
+            android:name=".CrearArrendatario"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:parentActivityName=".VistaContratos"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".VistaContratos" />
+        </activity>
+        <activity
+            android:name=".EditarContrato"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".EditarContrato2"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Arrendatario" />
+
+        <!-- HOJA RUTA SECTION -->
+        <activity
+            android:name=".HojaRuta"
+            android:parentActivityName=".VistaContratos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".VistaContratos" />
+        </activity>
+        <activity
+            android:name=".CrearHojaRuta"
+            android:parentActivityName=".HojaRuta"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HojaRuta" />
+        </activity>
+        <activity
+            android:name=".CrearHojaRuta2"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".CrearHojaRuta3"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".EditarHojaRuta1"
+            android:parentActivityName=".HojaRuta"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HojaRuta" />
+        </activity>
+        <activity
+            android:name=".EditarHojaRuta2"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".EditarHojaRuta3"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".EditarArrendatario"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".EditarParadas"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Borrar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.usuario.testingbd.Logup2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.1"
+        android:minHeight="250dp"
+        android:scaleType="center"
+        app:srcCompat="@drawable/mercedestaxi" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollViewLogup"
+        android:fillViewport="true"
+        android:isScrollContainer="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nombreRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_fields"
+            android:gravity="center"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:hint="@string/hint_nombreLogup"
+            android:inputType="textCapSentences"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/nifRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+id/nombreRegistro"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_fields"
+            android:gravity="center"
+            android:hint="@string/hint_nifCifLogup"
+            android:inputType="textCapSentences"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/emailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+id/nifRegistro"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_fields"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:hint="@string/hint_emailLogin"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/mobileNumberLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+id/emailLogin"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_fields"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:hint="@string/hint_mobileNumberLogin"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/licenciaLogup"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+id/mobileNumberLogin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_fields"
+            android:gravity="center"
+            android:hint="@string/hint_licenciaLogup"
+            android:inputType="textCapSentences"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/printerLogup"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+id/licenciaLogup"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_fields"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:hint="@string/hint_printerLogup"
+            android:inputType="textCapSentences"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/registro"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/printerLogup"
+            android:onClick="registrarTaxiDriver"
+            android:text="@string/logup"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

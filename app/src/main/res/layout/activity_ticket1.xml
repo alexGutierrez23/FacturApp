@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Ticket1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.1"
+        android:minHeight="250dp"
+        android:scaleType="center"
+        app:srcCompat="@drawable/mercedestaxi" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollViewTicket1"
+        android:fillViewport="true"
+        android:isScrollContainer="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/origenTicket"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/rounded_fields"
+                android:drawableBottom="@color/colorPrimary"
+                android:drawableLeft="@color/colorAccent"
+                android:gravity="center"
+                android:hint="@string/hint_origen"
+                android:inputType="textCapCharacters"
+                android:maxWidth="200dp"
+                android:singleLine="true"
+                android:textColor="#080808"
+                android:textColorHint="@android:color/darker_gray"
+                android:textIsSelectable="false"
+                android:textSize="25dp"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/destinoTicket"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_fields"
+                android:gravity="center"
+                android:hint="@string/hint_destino"
+                android:inputType="textCapCharacters"
+                android:singleLine="true"
+                android:textColor="#080808"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="23dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/origenTicket"
+                android:layout_alignLeft="@+id/origenTicket"
+                android:layout_alignStart="@+id/origenTicket"
+                android:layout_alignRight="@+id/origenTicket"
+                android:layout_alignEnd="@+id/origenTicket" />
+
+            <EditText
+                android:id="@+id/precioTicket"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autoText="false"
+                android:background="@drawable/rounded_fields"
+                android:gravity="center"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:hint="@string/hint_precio"
+                android:inputType="number|numberDecimal"
+                android:singleLine="true"
+                android:textColor="#080808"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="23dp"
+                android:layout_below="@+id/destinoTicket"
+                android:layout_alignLeft="@+id/destinoTicket"
+                android:layout_alignStart="@+id/destinoTicket"
+                android:layout_alignRight="@+id/destinoTicket"
+                android:layout_alignEnd="@+id/destinoTicket" />
+
+            <Button
+                android:id="@+id/buttonNextStepTicket"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:onClick="siguienteFormulario"
+                android:layout_below="@+id/precioTicket"
+                android:text="Siguiente"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

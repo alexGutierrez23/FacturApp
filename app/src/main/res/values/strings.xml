@@ -1,0 +1,250 @@
+<resources>
+    <string name="app_name">FacturApp</string>
+
+    <string name="myEmail">alexguti9@gmail.com</string>
+
+    <string name="hint_emailLogin">Email</string>
+    <string name="hint_passwordLogin">Contraseña</string>
+    <string name="hint_codeLogin">Confirmar código</string>
+    <string name="login">Iniciar sesión</string>
+
+    <string name="hint_emailLogup">Email</string>
+    <string name="logup">Registrar</string>
+    <string name="hint_nombreLogup">Nombre</string>
+    <string name="hint_nifCifLogup">NIF/CIF</string>
+    <string name="hint_mobileNumberLogin">Teléfono</string>
+    <string name="hint_printerLogup">Nombre impresora</string>
+    <string name="hint_licenciaLogup">Licencia Taxi (Opcional)</string>
+
+    <string name="title_activity_menu_principal"> MenuPrincipal</string>
+    <string name="title_activity_borrar"> FacturApp > Borrar</string>
+    <string name="title_activity_editProfile"> FacturApp > Editar perfil</string>
+    <string name="title_activity_editProfile2"> FacturApp > Editar perfil II</string>
+    <string name="title_activity_uploadLogoImage"> FacturApp > Subir logo</string>
+
+    <string name="title_activity_ticket2"> Ticket > Datos del viaje II</string>
+    <string name="title_activity_ticket1"> Ticket > Datos del viaje</string>
+    <string name="title_activity_imprimir"> Ticket > Finalizar </string>
+
+    <string name="title_activity_factura"> Factura > Datos del cliente I </string>
+    <string name="title_activity_factura1"> Factura > Datos del cliente II </string>
+    <string name="title_activity_factura2"> Factura > Datos del viaje I </string>
+    <string name="title_activity_factura3"> Factura > Datos del viaje II </string>
+
+    <string name="title_activity_presupuesto"> Presupuesto > Datos del cliente I </string>
+    <string name="title_activity_presupuesto1"> Presupuesto > Datos del cliente II </string>
+    <string name="title_activity_presupuesto2"> Presupuesto > Datos del viaje I </string>
+    <string name="title_activity_presupuesto3"> Presupuesto > Datos del viaje II </string>
+
+    <string name="title_activity_logUp"> FacturApp > Editar perfil</string>
+    <string name="title_activity_logUp2"> FacturApp > Editar perfil</string>
+    <string name="title_activity_login"> FacturApp > Login </string>
+    <string name="loginTitle">FacturApp > Inicio de sesión</string>
+
+    <string name="hint_origen">Origen</string>
+    <string name="hint_destino">Destino</string>
+    <string name="hint_precio">Precio</string>
+    <string name="hint_fecha">Fecha</string>
+    <string name="hint_nif">NIF</string>
+    <string name="hint_razonSocial">Razón social</string>
+    <string name="hint_nifCif">NIF/CIF</string>
+    <string name="hint_email">Email (opcional)</string>
+    <string name="btn_Next">Siguiente</string>
+    <string name="hint_masInformacion">Más información</string>
+    <string name="hint_cantidad">Cantidad</string>
+    <string name="hint_dir">Dirección</string>
+    <string name="hint_number">Número</string>
+    <string name="hint_town">Población</string>
+    <string name="hint_county">Provincia</string>
+    <string name="hint_country">País</string>
+    <string name="hint_postcode">Código Postal</string>
+    <string name="datos_del_viaje">Datos del viaje</string>
+    <string name="ticket_title"><![CDATA[Ticket >]]></string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_imprimir_ticket">ImprimirTicket</string>
+
+    <string name="button_next">Siguiente</string>
+    <string name="button_help">Ayuda</string>
+    <string name="button_generate">Generar</string>
+    <string name="button_updateArrendatario">Actualizar Arrendatario</string>
+    <string name="button_updateStops">Actualizar paradas</string>
+
+    <string name="dialog_borrarTicket">¿Estás seguro que deseas borrar el último ticket creado?</string>
+    <string name="dialog_borrarTicketTitulo">Borrar Ticket</string>
+    <string name="dialog_borrarFactura">¿Estás seguro que deseas borrar la última factura creada?</string>
+    <string name="dialog_borrarFacturaTitulo">Borrar Factura</string>
+    <string name="dialog_borrarPresupuesto">¿Estás seguro que deseas borrar el último presupuesto creado?</string>
+    <string name="dialog_borrarPresupuestoTitulo">Borrar Presupuesto</string>
+
+    <string name="dialog_borrarHojaRuta">¿Estás seguro que deseas borrar esta hoja de ruta?</string>
+    <string name="dialog_borrarHojaRutaTitulo">Borrar Hoja de Ruta</string>
+
+    <string name="dialog_imprimirHojaRuta">¿Estás seguro que quieres imprimir esta hoja de ruta?</string>
+    <string name="dialog_imprimirHojaRutaTitulo">Imprimir Hoja de Ruta</string>
+
+    <string name="dialog_borrarArd">¿Estás seguro que quieres borrar este arrendatario y, por tanto, todas las hojas de ruta asociadas a él?</string>
+    <string name="dialog_borrarArdTitulo">Borrar Arrendatario</string>
+
+    <string name="dialog_borrarContrato">¿Estás seguro que deseas borrar este contrato y sus respectivas hojas de ruta?</string>
+    <string name="dialog_borrarContratoTitulo">Borrar Contrato</string>
+
+    <string name="dialog_enviarTicketTitulo">Enviar Ticket</string>
+    <string name="dialog_enviarTicket">¿Deseas mandar este ticket por email?</string>
+
+    <string name="dialog_imprimirTicketTitulo">Imprimir Ticket</string>
+    <string name="dialog_imprimirTicket">¿Deseas imprimir este ticket?</string>
+
+    <string name="dialog_enviarFacturaTitulo">Enviar Factura</string>
+    <string name="dialog_enviarFactura">¿Deseas mandar esta factura por email?</string>
+
+    <string name="dialog_enviarHojaRutaTitulo">Enviar Hoja de Ruta</string>
+    <string name="dialog_enviarHojaRuta">¿Deseas mandar esta hoja de ruta por email?</string>
+
+    <string name="dialog_enviarPresupuestoTitulo">Enviar Presupuesto</string>
+    <string name="dialog_enviarPresupuesto">¿Deseas mandar este presupuesto por email?</string>
+
+    <string name="dialog_ayudaImpresoraTitulo">FAQs</string>
+    <string name="dialog_ayudaImpresora">¿Dónde puedo ver el nombre de mi impresora?
+        Después de activar el BlueTooth, vaya a "Ajustes" -> "BlueTooth".</string>
+    <string name="dialog_ayudaImpresoraVersionAntigua">¿Dónde puedo ver el nombre de mi impresora?
+        Después de activar el BlueTooth, vaya a "Ajustes" -> "BlueTooth" -> "Dispositivos sincronizados".
+        Una vez ahí, busque el dispositivo (el nombre contendrá la palabra "printer" o "impresora", además del icono de una impresora).</string>
+
+    <string name="dialog_no">NO</string>
+    <string name="dialog_si">SÍ</string>
+    <string name="title_activity_main3">PrincipalTabs</string>
+    <string name="title_activity_tab_menu_principal">TabMenuPrincipal</string>
+
+    <!-- MENSAJES CONFIRMACION/ERROR -->
+    <string name="ticketErrorMessage">No se pudo crear el Ticket. Contacte con el administrador.</string>
+    <string name="ticketEmailError">Introduzca una dirección de email válida.</string>
+    <string name="ticketEmailSubject">Ticket correspondiente al día </string>
+    <string name="invoiceEmailSubject">Factura correspondiente al día </string>
+    <string name="hojaRutaEmailSubject_1">Hoja de ruta </string>
+    <string name="hojaRutaEmailSubject_2">correspondiente al contrato </string>
+    <string name="presupuestoEmailSubject">Presupuesto correspondiente al día </string>
+    <string name="watermarkPresupuesto">NO VÁLIDO COMO FACTURA</string>
+    <string name="borrarTicketError">Solo se puede borrar el último ticket creado</string>
+    <string name="borrarInvoiceError">Solo se puede borrar la última factura creada</string>
+    <string name="borrarPresupuestoError">Solo se puede borrar el último presupuesto creado</string>
+    <string name="confirmacionBorrar">borrado correctamente</string>
+
+    <!--EDIT PROFILE-->
+    <string name="notEmptyField">Este campo no puede estar vacío</string>
+    <string name="validEmail">Introduzca una dirección de email válida</string>
+    <string name="completeForm">Complete el formulario, por favor</string>
+    <string name="profileUpdated">Su perfil se ha actualizado</string>
+    <string name="sendCodeThroughEmail">Envíe el código por email, por favor</string>
+    <string name="verificationCodeMessage2"> ha solicitado un código de confirmación para empezar a usar la aplicación: </string>
+    <string name="verificationCodeMessage1">El usuario </string>
+    <string name="verificationCodeSubject">Código de confirmación</string>
+
+    <!--IMPRIMIR-->
+    <string name="notConnectedToPrinter">No se pudo conectar con la impresora. Fallo de impresion</string>
+    <string name="turnOnPrinter">Encienda la impresora, por favor</string>
+    <string name="btDeviceFound">Dispositivo BT encontrado</string>
+    <string name="uuidBt">00001101-0000-1000-8000-00805f9b34fb</string>
+    <string name="connectionFail">No se pudo establecer conexion bluetooth</string>
+    <string name="connected">Conectado a la impresora </string>
+
+    <!--LOGIN-->
+    <string name="logUpMessage">Por favor, regístrese antes de iniciar sesión</string>
+    <string name="logupCompletedMessage">Su perfil ya está registrado. Por favor, inicie sesión</string>
+    <string name="resendCode">Reenviar código</string>
+
+    <string name="verPdf">Ver PDF</string>
+
+    <!-- NAV DRAWER -->
+    <string name="navigation_drawer_inicio">Inicio</string>
+    <string name="navigation_drawer_editarPerfil">Editar Perfil</string>
+    <string name="navigation_drawer_subirLogo">Subir un logo</string>
+    <string name="navigation_drawer_hojaRuta">Hoja de Ruta</string>
+    <string name="navigation_drawer_verContratos">Contratos</string>
+    <string name="navigation_drawer_editarArrendatario">Editar Arrendatarios</string>
+    <string name="navigation_drawer_rendimientoMes">Rendimiento Mensual</string>
+    <string name="navigation_drawer_ticketsMes">Tickets</string>
+    <string name="navigation_drawer_facturasMes">Facturas</string>
+    <string name="navigation_drawer_ayudaGeneral">Guía de uso</string>
+    <string name="navigation_drawer_ayudaBluetooth">Mi Impresora BlueTooth</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Contrato -->
+    <string name="hint_aliasContrato">Alias contrato</string>
+    <string name="hint_editarAliasContrato">Alias contrato (no editable)</string>
+    <string name="hint_arrendatario">Arrendatario</string>
+    <string name="hint_editarArrendatario">Arrendatario (no editable)</string>
+    <string name="hint_numContrato">Número Contrato</string>
+    <string name="hint_editarNumContrato">Número Contrato (no editable)</string>
+    <string name="hint_nombreArrendador">Nombre arrendador</string>
+    <string name="hint_cifArrendador">CIF arrendador</string>
+    <string name="hint_cifArrendatario">CIF arrendatario</string>
+    <string name="hint_editarCifArrendatario">CIF arrendatario (no editable)</string>
+    <string name="hint_crearContrato">Crear contrato</string>
+    <string name="hint_crearArrendatario">Crear arrendatario</string>
+    <string name="hint_finalizarContrato">Finalizar contrato</string>
+    <string name="hint_actualizarContrato">Actualizar contrato</string>
+    <string name="hint_matriculaVehiculo">Matrícula vehículo</string>
+    <string name="title_activity_crearContrato"> FacturApp > Crear Contrato</string>
+    <string name="tv_noContratos_creados">No existen contratos creados</string>
+    <string name="hint_spinnerContrato">Por favor seleccione un año...</string>
+    <string name="title_activity_editContrato"> FacturApp > Editar Contrato</string>
+    <string name="title_activity_editContrato2"> FacturApp > Editar Contrato II</string>
+    <string name="contratoUpdated">Contrato actualizado</string>
+    <string name="tvArrendatario">Seleccione una de las siguientes opciones, por favor:</string>
+    <string name="nuevoArrendatarioRB">Crear un nuevo arrendatario</string>
+    <string name="seleccionarArrendatarioRB">Seleccionar un arrendatario</string>
+    <string name="YoArrendatarioRB">Crearme a mí mismo como arrendatario</string>
+    <string name="YoArrendadorCB">Yo voy a ser el arrendador</string>
+
+    <!-- EDITAR ARRENDATARIO -->
+    <string name="tvEditarArrendatario">Seleccione un arrendatario, por favor:</string>
+
+    <!-- HOJA RUTA -->
+    <string name="hint_fechaInicio">Fecha de inicio</string>
+    <string name="hint_fechaFin">Fecha de fin</string>
+    <string name="hint_horaInicio">Hora de inicio</string>
+    <string name="hint_horaFin">Hora de fin</string>
+    <string name="hint_lugarInicio">Lugar inicio del servicio</string>
+    <string name="hint_inicioServicio">Inicio del servicio</string>
+    <string name="hint_destinoDelServicio">Destino del servicio</string>
+    <string name="hint_pasajeros">Pasajeros</string>
+    <string name="hint_observaciones">Observaciones</string>
+    <string name="hint_paradas">Paradas intermedias</string>
+    <string name="hint_crearHojaRuta">Crear hoja ruta</string>
+    <string name="hint_masParadas">Añadir paradas</string>
+    <string name="hint_masParadasEditar">Añadir + paradas</string>
+    <string name="hint_numHojaRuta">Número Hoja Ruta (no editable)</string>
+    <string name="hint_aliasHojaRuta">Alias Hoja Ruta</string>
+    <string name="title_activity_createHojaRuta"> FacturApp > Crear Hoja Ruta I</string>
+    <string name="title_activity_createHojaRuta2"> FacturApp > Crear Hoja Ruta II</string>
+    <string name="title_activity_createHojaRuta3"> FacturApp > Crear Hoja Ruta III</string>
+    <string name="title_activity_editHojaRuta"> FacturApp > Editar Hoja Ruta I</string>
+    <string name="title_activity_editHojaRuta2"> FacturApp > Editar Hoja Ruta II</string>
+    <string name="title_activity_editHojaRuta3"> FacturApp > Editar Hoja Ruta III</string>
+    <string name="hojaRutaUpdated">Hoja de Ruta actualizada</string>
+    <string name="hint_actualizarHojaRuta">Actualizar Hoja Ruta</string>
+    <string name="title_activity_createArrendatario"> Crear Arrendatario</string>
+    <string name="title_activity_editArrendatario"> Editar Arrendatario</string>
+    <string name="title_activity_editStops"> Editar Paradas</string>
+    <string name="selectEditStopRB">Editar paradas</string>
+    <string name="selectRemoveStopRB">Borrar parada</string>
+    <string name="selectAddStopRB">Añadir paradas</string>
+    <string name="addStop">Añadir Parada</string>
+    <string name="removeStop">Borrar Parada</string>
+
+    <!-- UPLOAD IMAGE -->
+    <string name="button_upload">Subir imagen</string>
+    <string name="button_confirm">Confirmar</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="error_subirImagen">Por favor, suba un logo. Si no, pulse cancelar</string>
+    <string name="info_subirImagen">Por favor, seleccione una sola imagen</string>
+    <string name="wait_subirImagen">Espere un momento...</string>
+    <string name="error_subirImagenRepetida">Este logo ya existe en la base de datos. Suba un logo diferente o pulse cancelar</string>
+    <string name="success_subirImagen">Imagen subida correctamente</string>
+
+</resources>

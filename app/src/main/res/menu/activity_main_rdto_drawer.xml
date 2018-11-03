@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:tint="@color/colorAccent"
+            android:title="@string/navigation_drawer_inicio" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:tint="@color/colorAccent"
+            android:title="@string/navigation_drawer_editarPerfil" />
+        <item
+            android:id="@+id/nav_hojaRuta"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:tint="@color/colorAccent"
+            android:title="@string/navigation_drawer_hojaRuta" />
+        <item
+            android:id="@+id/nav_rendimientos"
+            android:icon="@drawable/ic_euro_symbol_black_24dp"
+            android:tint="@color/colorAccent"
+            android:title="@string/navigation_drawer_rendimientoMes" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Ayuda">
+            <menu>
+                <item
+                    android:id="@+id/nav_ayudaGeneral"
+                    android:tint="@color/colorAccent"
+                    android:icon="@drawable/ic_info_outline_black_24dp"
+                    android:title="@string/navigation_drawer_ayudaGeneral" />
+                <item
+                    android:id="@+id/nav_ayudaBluetooth"
+                    android:icon="@drawable/ic_print_black_24dp"
+                    android:tint="@color/colorAccent"
+                    android:title="@string/navigation_drawer_ayudaBluetooth" />
+            </menu>
+        </item>
+
+    </group>
+
+</menu>

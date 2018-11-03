@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.usuario.testingbd.EditarParadas">
+
+    <ImageView
+        android:id="@+id/imageViewContrato"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.1"
+        android:minHeight="250dp"
+        android:scaleType="center"
+        app:srcCompat="@drawable/mercedestaxi" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollViewEditarContrato"
+        android:fillViewport="true"
+        android:isScrollContainer="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroupStops">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButtonAddStop"
+                    android:text="@string/selectAddStopRB"
+                    android:onClick="onStopOptionsRbSelected"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selectEditStopRB"
+                    android:id="@+id/radioButtonEditStop"
+                    android:onClick="onStopOptionsRbSelected"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selectRemoveStopRB"
+                    android:id="@+id/radioButtonRemoveStop"
+                    android:onClick="onStopOptionsRbSelected"
+                    />
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/darkGrayColor"
+                android:id="@+id/spinnerParadasLayout"
+                android:layout_below="@+id/radioGroupStops"
+                android:layout_marginTop="20dp">
+
+                <Spinner
+                    android:id="@+id/spinnerParadas"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:spinnerMode="dialog"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerParadasLayout"
+                android:layout_marginTop="20dp"
+                android:id="@+id/editarParadasLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvEditarParadas"
+                    android:text="@string/hint_paradas"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/nombreEditarParada"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/rounded_fields"
+                    android:gravity="center"
+                    android:hint="@string/hint_paradas"
+                    android:inputType="textCapCharacters"
+                    android:singleLine="true"
+                    android:textColor="#080808"
+                    android:layout_below="@+id/tvEditarParadas"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="23dp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_editarParadasSalir"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:onClick="salirEditarParadas"
+                android:layout_below="@+id/editarParadasLayout"
+                android:text="salir" />
+
+            <Button
+                android:id="@+id/button_editarParadas"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/button_editarParadasSalir"
+                android:onClick="actualizarParadas"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="50dp"
+                android:visibility="gone"
+                android:layout_below="@+id/editarParadasLayout"
+                android:text="@string/button_updateStops" />
+
+            <Button
+                android:id="@+id/button_addParadas"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/button_editarParadasSalir"
+                android:onClick="anyadirParadas"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@+id/editarParadasLayout"
+                android:visibility="gone"
+                android:text="@string/addStop"
+                />
+            <Button
+                android:id="@+id/button_removeParada"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/button_editarParadasSalir"
+                android:onClick="borrarParada"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/editarParadasLayout"
+                android:visibility="gone"
+                android:text="@string/removeStop"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

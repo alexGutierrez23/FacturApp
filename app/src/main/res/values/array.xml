@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opciones_ticket_array">
+        <item>Ver ticket</item>
+        <item>Enviar ticket por email</item>
+        <item>Imprimir ticket</item>
+        <item>Borrar ticket</item>
+    </string-array>
+    <string-array name="opciones_factura_array">
+        <item>Ver factura</item>
+        <item>Enviar factura por email</item>
+        <item>Borrar factura</item>
+    </string-array>
+    <string-array name="opciones_presupuesto_array">
+        <item>Ver presupuesto</item>
+        <item>Enviar presupuesto por email</item>
+        <item>Borrar presupuesto</item>
+    </string-array>
+</resources>

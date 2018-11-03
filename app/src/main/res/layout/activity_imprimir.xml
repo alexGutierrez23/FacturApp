@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.testingbd.Imprimir">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.1"
+            android:minHeight="250dp"
+            android:scaleType="center"
+            app:srcCompat="@drawable/mercedestaxi" />
+
+        <Button
+            android:id="@+id/enviarMail"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="74dp"
+            android:onClick="enviarMail"
+            android:text="Enviar"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/imprimir"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/enviarMail"
+            android:layout_alignStart="@+id/enviarMail"
+            android:layout_below="@+id/enviarMail"
+            android:layout_marginTop="40dp"
+            android:onClick="imprimir"
+            android:text="Imprimir"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/salir"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="42dp"
+            android:onClick="salir"
+            android:text="Finalizar"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:layout_below="@+id/imprimir"
+            android:layout_alignLeft="@+id/enviarMail"
+            android:layout_alignStart="@+id/enviarMail" />
+
+        <ProgressBar
+            android:id="@+id/progressBarImprimir"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300sp"
+            android:layout_height="30sp"
+            android:layout_below="@+id/salir"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="112dp"
+            android:max="100"
+            android:progress="1"/>
+    </RelativeLayout>
+
+</RelativeLayout>

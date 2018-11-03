@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.example.usuario.testingbd"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    aaptOptions {
+        noCompress "pdf"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    implementation 'com.android.support:support-v13:24.2.1'
+    implementation 'com.android.support:support-v4:24.2.1'
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    api project(':itextg-5.5.4')
+    api project(':xmlworker-5.5.4')
+    api 'com.android.support:appcompat-v7:24.2.1'
+    api 'com.android.support:design:24.2.1'
+    api 'com.android.support:cardview-v7:24.2.1'
+    api 'com.android.support:recyclerview-v7:24.2.1'
+    api 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    api 'com.github.barteksc:android-pdf-viewer:2.0.3'
+
+    testImplementation 'junit:junit:4.12'
+}
